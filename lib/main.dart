@@ -50,7 +50,7 @@ class _HomeState extends State<Home> {
         height: 50.0,
         items:  <Widget>[
           Icon(Icons.home, size: 35),
-          Icon(Icons.apps, size: 35),
+          Icon(Icons.info, size: 35),
           Icon(Icons.settings, size: 35),
         ],
         index: _page,
