@@ -1,96 +1,39 @@
 import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'home.dart';
+import 'info.dart';
+import 'settings.dart';
 
-void main() => runApp(MaterialApp(
-  home: Home(),
-));
 
-class Home extends StatefulWidget {
-  Home({Key key}) : super(key: key);
+void main() => runApp(MyApp());
+
+class MyApp extends StatelessWidget {
+  // This widget is the root of your application.
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'Flutter Demo',
+      theme: ThemeData(
+        primarySwatch: Colors.blue,
+        visualDensity: VisualDensity.adaptivePlatformDensity,
+      ),
+      home: HomePage(),
+    );
+  }
+}
+
+class HomePage extends StatefulWidget {
+  HomePage({Key key}) : super(key: key);
 
   @override
   _HomeState createState() => _HomeState();
 }
 
-class _HomeState extends State<Home> {
+class _HomeState extends State<HomePage> {
 
   int _page = 0;
-  static List<Widget> _widgetOptions = <Widget>[
-    Scaffold(
-      backgroundColor: Colors.blue[300],
-      body: RaisedButton(
-          onPressed: () {},
-          child: Text("Press Me"),
-          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20))
-      ),
-    ),
-    GridView.count(
-      primary: false,
-      padding: const EdgeInsets.all(20),
-      crossAxisSpacing: 10,
-      mainAxisSpacing: 10,
-      crossAxisCount: 2,
-      children: <Widget>[
-        Container(
-          padding: const EdgeInsets.all(8),
-          child: Center(
-            child: const Text("S.O.Ps", textScaleFactor: 2.4),
-          ),
-          color: Colors.blue[200],
-        ),
-        Container(
-          padding: const EdgeInsets.all(8),
-          child: Center(
-            child: const Text("Safety Equipment", textScaleFactor: 2.4),
-          ),
-          color: Colors.blue[200],
-        ),
-        Container(
-          padding: const EdgeInsets.all(8),
-          child: Center(
-            child: const Text("Fun Facts", textScaleFactor: 2.4),
-          ),
-          color: Colors.blue[200],
-        ),
-        Container(
-          padding: const EdgeInsets.all(8),
-          child: Center(
-            child: const Text("Fake News", textScaleFactor: 2.4),
-          ),
-          color: Colors.blue[200],
-        ),
-        Container(
-          padding: const EdgeInsets.all(8),
-          child: Center(
-            child: const Text("More Info", textScaleFactor: 2.4),
-          ),
-          color: Colors.blue[200],
-        ),
-        Container(
-          padding: const EdgeInsets.all(8),
-          child: Center(
-            child: const Text("Reminder", textScaleFactor: 2.4),
-          ),
-          color: Colors.blue[200],
-        ),
-      ],
-    ),
-    Scaffold(
-      backgroundColor: Colors.blue[300],
-      body: RaisedButton(
-          onPressed: () {},
-          child: Text("Press Her"),
-          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20))
-      ),
-    ),
-  ];
-
-  void _onItemTapped(int index) {
-    setState(() {
-      _page = index;
-    });
-  }
+  final _pageOptions = [Home(), Info(), Settings()];
 
   @override
   Widget build(BuildContext context) {
@@ -98,21 +41,28 @@ class _HomeState extends State<Home> {
       appBar: AppBar(
         title: Text('Covid-19 Watchlist'),
         centerTitle: true,
-        backgroundColor: Colors.blue[900],
+        backgroundColor: Colors.purple[900],
       ),
       body: Center(
-          child: _widgetOptions.elementAt(_page),
+          child: _pageOptions.elementAt(_page),
       ),
       bottomNavigationBar: CurvedNavigationBar(
-        backgroundColor: Colors.grey[400],
-        height: 50.0,
+        height: 55.0,
+        color: Colors.purple[900],
+        backgroundColor: Colors.white,
+        animationCurve: Curves.linear,
+        animationDuration: Duration(milliseconds: 200),
         items:  <Widget>[
-          Icon(Icons.home, size: 35),
-          Icon(Icons.info, size: 35),
-          Icon(Icons.settings, size: 35),
+          Icon(Icons.home, size: 35, color: Colors.white),
+          Icon(Icons.info, size: 35, color: Colors.white),
+          Icon(Icons.settings, size: 35, color: Colors.white),
         ],
         index: _page,
-        onTap: _onItemTapped,
+        onTap: (int i) {
+          setState(() {
+            _page = i;
+          });
+        },
       ),
     );
   }
