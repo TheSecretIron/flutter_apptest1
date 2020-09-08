@@ -16,15 +16,73 @@ class Home extends StatefulWidget {
 class _HomeState extends State<Home> {
 
   int _page = 0;
-  static const List<Widget> _widgetOptions = <Widget>[
-    Text(
-      'Index 0: Home',
+  static List<Widget> _widgetOptions = <Widget>[
+    Scaffold(
+      backgroundColor: Colors.blue[300],
+      body: RaisedButton(
+          onPressed: () {},
+          child: Text("Press Me"),
+          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20))
+      ),
     ),
-    Text(
-      'Index 1: Business',
+    GridView.count(
+      primary: false,
+      padding: const EdgeInsets.all(20),
+      crossAxisSpacing: 10,
+      mainAxisSpacing: 10,
+      crossAxisCount: 2,
+      children: <Widget>[
+        Container(
+          padding: const EdgeInsets.all(8),
+          child: Center(
+            child: const Text("S.O.Ps", textScaleFactor: 2.4),
+          ),
+          color: Colors.blue[200],
+        ),
+        Container(
+          padding: const EdgeInsets.all(8),
+          child: Center(
+            child: const Text("Safety Equipment", textScaleFactor: 2.4),
+          ),
+          color: Colors.blue[200],
+        ),
+        Container(
+          padding: const EdgeInsets.all(8),
+          child: Center(
+            child: const Text("Fun Facts", textScaleFactor: 2.4),
+          ),
+          color: Colors.blue[200],
+        ),
+        Container(
+          padding: const EdgeInsets.all(8),
+          child: Center(
+            child: const Text("Fake News", textScaleFactor: 2.4),
+          ),
+          color: Colors.blue[200],
+        ),
+        Container(
+          padding: const EdgeInsets.all(8),
+          child: Center(
+            child: const Text("More Info", textScaleFactor: 2.4),
+          ),
+          color: Colors.blue[200],
+        ),
+        Container(
+          padding: const EdgeInsets.all(8),
+          child: Center(
+            child: const Text("Reminder", textScaleFactor: 2.4),
+          ),
+          color: Colors.blue[200],
+        ),
+      ],
     ),
-    Text(
-      'Index 2: School',
+    Scaffold(
+      backgroundColor: Colors.blue[300],
+      body: RaisedButton(
+          onPressed: () {},
+          child: Text("Press Her"),
+          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20))
+      ),
     ),
   ];
 
@@ -46,7 +104,7 @@ class _HomeState extends State<Home> {
           child: _widgetOptions.elementAt(_page),
       ),
       bottomNavigationBar: CurvedNavigationBar(
-        backgroundColor: Colors.blue[400],
+        backgroundColor: Colors.grey[400],
         height: 50.0,
         items:  <Widget>[
           Icon(Icons.home, size: 35),
@@ -56,7 +114,6 @@ class _HomeState extends State<Home> {
         index: _page,
         onTap: _onItemTapped,
       ),
-      backgroundColor: Colors.blue[400],
     );
   }
 }
