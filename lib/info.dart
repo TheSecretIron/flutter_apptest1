@@ -9,7 +9,7 @@ class Info extends StatelessWidget {
         child: FlatButton.icon(
           color: Colors.red,
           icon: Icon(Icons.add_a_photo), //`Icon` to display
-          label: Text('Add a Photo'), //`Text` to display
+          label: Text('Add Photo'), //`Text` to display
           onPressed: () {},
         ),
       ),
