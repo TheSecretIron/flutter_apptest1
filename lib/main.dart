@@ -5,7 +5,6 @@ import 'home.dart';
 import 'info.dart';
 import 'settings.dart';
 
-
 void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
