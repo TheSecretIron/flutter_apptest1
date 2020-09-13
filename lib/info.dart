@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'more info.dart';
+import 'ppe.dart';
 
 class Info extends StatelessWidget {
   @override
@@ -39,7 +40,11 @@ class Info extends StatelessWidget {
                   disabledColor: Colors.grey,
                   disabledTextColor: Colors.black,
                   padding: EdgeInsets.all(8.0),
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => PPE()));
+                  },
                   child: Column(
                     mainAxisSize: MainAxisSize.min,
                     children: <Widget>[
