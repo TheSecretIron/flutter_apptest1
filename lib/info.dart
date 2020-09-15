@@ -17,18 +17,16 @@ class Info extends StatelessWidget {
                 RaisedButton(
                   shape: new RoundedRectangleBorder(borderRadius: new BorderRadius.circular(10.0)),
                   color: Colors.purple[400],
-                  textColor: Colors.white,
-                  disabledColor: Colors.grey,
-                  disabledTextColor: Colors.black,
                   padding: EdgeInsets.all(8.0),
                   onPressed: () {},
                   child: Column(
                     mainAxisSize: MainAxisSize.min,
                     children: <Widget>[
                       new Image.asset(
-                        'images/1.jpg',
+                        'assets/images/sop.jpg',
                         height: 140.0,
                         width: 140.0,
+                        fit: BoxFit.fill,
                       ),
                     ],
                   ),
@@ -36,9 +34,6 @@ class Info extends StatelessWidget {
                 RaisedButton(
                   shape: new RoundedRectangleBorder(borderRadius: new BorderRadius.circular(10.0)),
                   color: Colors.purple[400],
-                  textColor: Colors.white,
-                  disabledColor: Colors.grey,
-                  disabledTextColor: Colors.black,
                   padding: EdgeInsets.all(8.0),
                   onPressed: () {
                     Navigator.push(
@@ -49,7 +44,7 @@ class Info extends StatelessWidget {
                     mainAxisSize: MainAxisSize.min,
                     children: <Widget>[
                       new Image.asset(
-                        'images/2.jpg',
+                        'assets/images/ppe.jpg',
                         height: 140.0,
                         width: 140.0,
                       ),
@@ -64,16 +59,13 @@ class Info extends StatelessWidget {
                 RaisedButton(
                   shape: new RoundedRectangleBorder(borderRadius: new BorderRadius.circular(10.0)),
                   color: Colors.purple[400],
-                  textColor: Colors.white,
-                  disabledColor: Colors.grey,
-                  disabledTextColor: Colors.black,
                   padding: EdgeInsets.all(8.0),
                   onPressed: () {},
                   child: Column(
                     mainAxisSize: MainAxisSize.min,
                     children: <Widget>[
                       new Image.asset(
-                        'images/3.jpg',
+                        'assets/images/ff.jpg',
                         height: 140.0,
                         width: 140.0,
                       ),
@@ -83,16 +75,13 @@ class Info extends StatelessWidget {
                 RaisedButton(
                   shape: new RoundedRectangleBorder(borderRadius: new BorderRadius.circular(10.0)),
                   color: Colors.purple[400],
-                  textColor: Colors.white,
-                  disabledColor: Colors.grey,
-                  disabledTextColor: Colors.black,
                   padding: EdgeInsets.all(8.0),
                   onPressed: () {},
                   child: Column(
                     mainAxisSize: MainAxisSize.min,
                     children: <Widget>[
                       new Image.asset(
-                        'images/4.jpg',
+                        'assets/images/fn.jpg',
                         height: 140.0,
                         width: 140.0,
                       ),
@@ -107,9 +96,6 @@ class Info extends StatelessWidget {
                 RaisedButton(
                   shape: new RoundedRectangleBorder(borderRadius: new BorderRadius.circular(10.0)),
                   color: Colors.purple[400],
-                  textColor: Colors.white,
-                  disabledColor: Colors.grey,
-                  disabledTextColor: Colors.black,
                   padding: EdgeInsets.all(8.0),
                   onPressed: () {
                     Navigator.push(
@@ -120,7 +106,7 @@ class Info extends StatelessWidget {
                     mainAxisSize: MainAxisSize.min,
                     children: <Widget>[
                       new Image.asset(
-                        'images/6.jpg',
+                        'assets/images/jn.jpg',
                         height: 140.0,
                         width: 140.0,
                       ),
