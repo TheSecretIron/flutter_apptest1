@@ -43,7 +43,6 @@ class _MoreInfoState extends State<MoreInfo> {
     return Scaffold(
       appBar: AppBar(
         title: Text('More Info'),
-        backgroundColor: Colors.purple[900],
       ),
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.start,

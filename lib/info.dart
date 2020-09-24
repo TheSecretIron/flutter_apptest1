@@ -1,7 +1,9 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'more info.dart';
+import 'sop.dart';
 import 'ppe.dart';
+import 'cov.dart';
+import 'more info.dart';
 
 class Info extends StatelessWidget {
   @override
@@ -18,7 +20,11 @@ class Info extends StatelessWidget {
                   shape: new RoundedRectangleBorder(borderRadius: new BorderRadius.circular(10.0)),
                   color: Colors.purple[400],
                   padding: EdgeInsets.all(8.0),
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => SOP()));
+                  },
                   child: Column(
                     mainAxisSize: MainAxisSize.min,
                     children: <Widget>[
@@ -26,7 +32,6 @@ class Info extends StatelessWidget {
                         'assets/images/sop.jpg',
                         height: 140.0,
                         width: 140.0,
-                        fit: BoxFit.fill,
                       ),
                     ],
                   ),
@@ -60,7 +65,11 @@ class Info extends StatelessWidget {
                   shape: new RoundedRectangleBorder(borderRadius: new BorderRadius.circular(10.0)),
                   color: Colors.purple[400],
                   padding: EdgeInsets.all(8.0),
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => COV()));
+                  },
                   child: Column(
                     mainAxisSize: MainAxisSize.min,
                     children: <Widget>[

@@ -7,7 +7,6 @@ class PPE extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text('Personal Protective Equipment'),
-        backgroundColor: Colors.purple[900],
       ),
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
@@ -48,7 +47,6 @@ class FaceMasks extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text('Face Masks'),
-        backgroundColor: Colors.purple[900],
       ),
       body: SingleChildScrollView(
         child: Column(
@@ -63,6 +61,13 @@ class FaceMasks extends StatelessWidget {
             ),
             Container(
               decoration: BoxDecoration(
+                  boxShadow: [
+                    BoxShadow(
+                      color: Colors.grey.withOpacity(0.8),
+                      spreadRadius: 5,
+                      blurRadius: 7,
+                    )
+                  ],
                   color: Colors.blue,
                   borderRadius: BorderRadius.all(Radius.circular(20.0))
               ),
@@ -102,6 +107,13 @@ class FaceMasks extends StatelessWidget {
             ),
             Container(
               decoration: BoxDecoration(
+                  boxShadow: [
+                    BoxShadow(
+                      color: Colors.grey.withOpacity(0.8),
+                      spreadRadius: 5,
+                      blurRadius: 7,
+                    )
+                  ],
                   color: Colors.green,
                   borderRadius: BorderRadius.all(Radius.circular(20.0))
               ),              padding: EdgeInsets.all(15.0),
@@ -139,6 +151,13 @@ class FaceMasks extends StatelessWidget {
             ),
             Container(
               decoration: BoxDecoration(
+                  boxShadow: [
+                    BoxShadow(
+                      color: Colors.grey.withOpacity(0.8),
+                      spreadRadius: 5,
+                      blurRadius: 7,
+                    )
+                  ],
                   color: Colors.amber,
                   borderRadius: BorderRadius.all(Radius.circular(20.0))
               ),              padding: EdgeInsets.all(15.0),
@@ -177,6 +196,13 @@ class FaceMasks extends StatelessWidget {
             ),
             Container(
               decoration: BoxDecoration(
+                  boxShadow: [
+                    BoxShadow(
+                      color: Colors.grey.withOpacity(0.8),
+                      spreadRadius: 5,
+                      blurRadius: 7,
+                    )
+                  ],
                   color: Colors.black,
                   borderRadius: BorderRadius.all(Radius.circular(20.0))
               ),              padding: EdgeInsets.all(15.0),
@@ -237,7 +263,6 @@ class HandSanitisers extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text('Hand Sanitisers'),
-        backgroundColor: Colors.purple[900],
       ),
       body: SingleChildScrollView(
         child: Column(
@@ -252,6 +277,13 @@ class HandSanitisers extends StatelessWidget {
             ),
             Container(
               decoration: BoxDecoration(
+                  boxShadow: [
+                    BoxShadow(
+                      color: Colors.grey.withOpacity(0.8),
+                      spreadRadius: 5,
+                      blurRadius: 7,
+                    )
+                  ],
                   color: Colors.brown,
                   borderRadius: BorderRadius.all(Radius.circular(20.0))
               ),              padding: EdgeInsets.all(15.0),
@@ -331,6 +363,13 @@ class HandSanitisers extends StatelessWidget {
             ),
             Container(
               decoration: BoxDecoration(
+                  boxShadow: [
+                    BoxShadow(
+                      color: Colors.grey.withOpacity(0.8),
+                      spreadRadius: 5,
+                      blurRadius: 7,
+                    )
+                  ],
                   color: Colors.teal,
                   borderRadius: BorderRadius.all(Radius.circular(20.0))
               ),              padding: EdgeInsets.all(15.0),
@@ -429,7 +468,6 @@ class ProtectiveClothing extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text('Protective Clothing'),
-        backgroundColor: Colors.purple[900],
       ),
       body: SingleChildScrollView(
         child: Column(
@@ -445,7 +483,14 @@ class ProtectiveClothing extends StatelessWidget {
             ),
             Container(
               decoration: BoxDecoration(
-                  color: Colors.blue,
+                  boxShadow: [
+                    BoxShadow(
+                      color: Colors.grey.withOpacity(0.8),
+                      spreadRadius: 5,
+                      blurRadius: 7,
+                    )
+                  ],
+                  color: Colors.blueGrey,
                   borderRadius: BorderRadius.all(Radius.circular(20.0))
               ),              padding: EdgeInsets.all(15.0),
               margin: EdgeInsets.symmetric(vertical: 8.0, horizontal: 30.0),
@@ -481,7 +526,14 @@ class ProtectiveClothing extends StatelessWidget {
             ),
             Container(
               decoration: BoxDecoration(
-                  color: Colors.green,
+                  boxShadow: [
+                    BoxShadow(
+                      color: Colors.grey.withOpacity(0.8),
+                      spreadRadius: 5,
+                      blurRadius: 7,
+                    )
+                  ],
+                  color: Colors.deepOrange,
                   borderRadius: BorderRadius.all(Radius.circular(20.0))
               ),               padding: EdgeInsets.all(15.0),
               margin: EdgeInsets.symmetric(vertical: 8.0, horizontal: 30.0),
@@ -501,65 +553,74 @@ class ProtectiveClothing extends StatelessWidget {
                     ),
                   ),
                   Text(
-                    '\n- Effective, efficient, and eco-friendly formula for sanitizing hands without containing alcohol.'
-                        '\n- Usually contain antimicrobial compounds like benzalkonium chloride that provide lasting protection against bacteria\n',
+                    '\n- Face shields provide additional protection and are worn over the standard eyewear; they also provide protection from impact, '
+                        'chemical, and blood-borne hazards'
+                        '\n- Full-facepiece respirators are considered the best form of eye protection when respiratory protection is needed as well\n',
                     style: TextStyle(
                       fontFamily: 'Montserrat',
                       color: Colors.white,
                     ),
                   ),
-                  Image(
-                    image: NetworkImage('https://cdn.medisave.co.uk/media/catalog/product/cache/1/image/585x585/9df78eab33525d08d6e5fb8d27136e95/1/1/11860_alcohol_free_foam_hand_sanitizer_500ml.jpg'),
-                  ),
-                  Text(
-                    '\nThey are mostly water-based and create a foam when rubbed on the hands.'
-                        ' Foaming hand sanitizer tends to spread it more consistently for better sanitizing coverage.',
-                    style: TextStyle(
-                      fontFamily: 'Montserrat',
-                      color: Colors.white,
-                    ),
-                  ),
-                  Text(
-                    '\nBenefits',
-                    style: TextStyle(
-                      fontFamily: 'Montserrat',
-                      fontWeight: FontWeight.bold,
-                      color: Colors.white,
-                    ),
-                  ),
-                  Text(
-                    '- Less drying to the skin and provides moisture due to forming lather (foam)'
-                        '\n- Keeps the skin soft and gently cleans the hands'
-                        '\n- The possibility of fire hazards is less and is non-damaging to surfaces'
-                        '\n- It is ideal for use in food production areas, or before handling food',
-                    style: TextStyle(
-                      fontFamily: 'Montserrat',
-                      color: Colors.white,
-                    ),
-                  ),
-                  Text(
-                    '\nDrawbacks',
-                    style: TextStyle(
-                      fontFamily: 'Montserrat',
-                      fontWeight: FontWeight.bold,
-                      color: Colors.white,
-                    ),
-                  ),
-                  Text(
-                    '- These may not be able to kill all types of germs, bacteria, & viruses'
-                        '\n- Alcohol-free hand sanitizers contain quaternary ammonium compounds (called benzalkonium chloride)'
-                        ' instead of alcohol to reduce microbes. These agents are less active than Alcohol'
-                        '\n- These contain triclosan, which is one of the top organic contaminants in wastewater and accumulates in biosolids in the environment',
-                    style: TextStyle(
-                      fontFamily: 'Montserrat',
-                      color: Colors.white,
-                    ),
-                  ),
+                  Image.asset('assets/images/FS1.png'),
                 ],
               ),
             ),
             Container(
-              margin: EdgeInsets.all(20.0),
+              decoration: BoxDecoration(
+                  boxShadow: [
+                    BoxShadow(
+                      color: Colors.grey.withOpacity(0.8),
+                      spreadRadius: 5,
+                      blurRadius: 7,
+                    )
+                  ],
+                  color: Colors.pink,
+                  borderRadius: BorderRadius.all(Radius.circular(20.0))
+              ),               padding: EdgeInsets.all(15.0),
+              margin: EdgeInsets.symmetric(vertical: 8.0, horizontal: 30.0),
+              child: Column(
+                children: [
+                  Container(
+                    child: Align(
+                      alignment: Alignment.topLeft,
+                      child: Text(
+                        'Medical Gowns',
+                        style: TextStyle(
+                          fontFamily: 'Montserrat',
+                          fontWeight: FontWeight.bold,
+                          color: Colors.white,
+                        ),
+                      ),
+                    ),
+                  ),
+                  Text(
+                    '\nThis form of PPE is all-encompassing and refers to the various suits and uniforms worn to protect the user from harm.'
+                        'Medical gowns are hospital gowns worn by medical professionals as personal protective equipment (PPE) in order '
+                        'to provide a barrier between patient and professional. This is to ensure that the personnel is protected from the '
+                        'bodily fluids of the patients.\n',
+                    style: TextStyle(
+                      fontFamily: 'Montserrat',
+                      color: Colors.white,
+                    ),
+                  ),
+                  Image.asset('assets/images/PPEG1.jpeg'),
+                ],
+              ),
+            ),
+            Container(
+              margin: EdgeInsets.fromLTRB(30.0, 10.0, 30.0, 10.0),
+              child: Text(
+                '\nATTENTION: These equipments are not for the general public. They are to be reserved for medical professionals in fighting this pandemic. '
+                    'If you have the option to get or buy said equipment, please refrain from doing so.',
+                style: TextStyle(
+                  fontFamily: 'Montserrat',
+                  fontWeight: FontWeight.bold,
+                  color: Colors.red[600]
+                ),
+              ),
+            ),
+            Container(
+              margin: EdgeInsets.fromLTRB(20.0, 10.0, 20.0, 10.0),
               child: Text(
                 '\nSource: https://naturalsanitizers.org/types-of-sanitizer/#:~:text=Types%20of%20sanitizer%201%20Types%202%201.%20Alcohol-Based,provides%20more%20applications%20per%20...%20More%20items...%20',
                 style: TextStyle(
