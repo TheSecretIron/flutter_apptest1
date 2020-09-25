@@ -1,5 +1,4 @@
 import 'package:curved_navigation_bar/curved_navigation_bar.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'home.dart';
 import 'info.dart';
@@ -43,7 +42,7 @@ class _HomeState extends State<HomePage> {
       ),
       bottomNavigationBar: CurvedNavigationBar(
         height: 55.0,
-        color: Colors.purple[900],
+        color: Colors.purple,
         backgroundColor: Colors.white,
         animationCurve: Curves.linear,
         animationDuration: Duration(milliseconds: 200),

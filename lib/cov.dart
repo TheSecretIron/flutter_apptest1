@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class COV extends StatelessWidget {
@@ -6,7 +5,7 @@ class COV extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Knowing Covid-19'),
+        title: Text('Covid-19 (Facts 101)'),
       ),
       body: Container(
         decoration: BoxDecoration(
@@ -21,7 +20,7 @@ class COV extends StatelessWidget {
             children: [
               Container(
                 decoration: BoxDecoration(
-                  borderRadius: BorderRadius.all(Radius.circular(20.0)),
+                  borderRadius: BorderRadius.all(Radius.circular(5.0)),
                   color: Colors.black,
                 ),
                 padding: EdgeInsets.all(10.0),
@@ -31,7 +30,7 @@ class COV extends StatelessWidget {
                     textAlign: TextAlign.center,
                     style: TextStyle(
                       fontFamily: 'Anton',
-                      fontSize: 20.0,
+                      fontSize: 22.0,
                       fontWeight: FontWeight.bold,
                       color: Colors.white,
                     ),
@@ -44,13 +43,13 @@ class COV extends StatelessWidget {
                     children: [
                       Container(
                         decoration: BoxDecoration(
-                          borderRadius: BorderRadius.all(Radius.circular(10.0)),
+                          borderRadius: BorderRadius.all(Radius.circular(20.0)),
                           color: Colors.blue,
                         ),
                         padding: EdgeInsets.all(15.0),
                         margin: EdgeInsets.all(15.0),
                         constraints: BoxConstraints(
-                            maxWidth: 200
+                            maxWidth: 250
                         ),
                         child: Column(
                           children: [
@@ -60,6 +59,7 @@ class COV extends StatelessWidget {
                                   fontWeight: FontWeight.bold,
                                   fontStyle: FontStyle.italic,
                                   color: Colors.white,
+                                  fontSize: 20.0
                                 ),
                             ),
                             Text(
@@ -68,7 +68,8 @@ class COV extends StatelessWidget {
                                     'specifically, severe acute respiratory syndrome '
                                     'coronavirus 2 (SARS-CoV-2). It was first identified in '
                                     'December 2019 in Wuhan, Hubei, China, and has resulted '
-                                    'in an ongoing pandemic.'
+                                    'in an ongoing pandemic.',
+                                style: TextStyle(fontSize: 17.0),
                             ),
                           ],
                         ),
@@ -81,7 +82,7 @@ class COV extends StatelessWidget {
                         padding: EdgeInsets.all(15.0),
                         margin: EdgeInsets.all(15.0),
                         constraints: BoxConstraints(
-                            maxWidth: 200
+                            maxWidth: 250
                         ),
                         child: Column(
                           children: [
@@ -91,6 +92,7 @@ class COV extends StatelessWidget {
                                 fontWeight: FontWeight.bold,
                                 fontStyle: FontStyle.italic,
                                 color: Colors.white,
+                                fontSize: 20.0
                               ),
                             ),
                             Text(
@@ -100,7 +102,8 @@ class COV extends StatelessWidget {
                                     'Older people, and those with underlying medical '
                                     'problems like cardiovascular disease, diabetes, '
                                     'chronic respiratory disease, and cancer are more '
-                                    'likely to develop serious illness.'
+                                    'likely to develop serious illness.',
+                              style: TextStyle(fontSize: 17.0),
                             ),
                           ],
                         ),
@@ -113,7 +116,7 @@ class COV extends StatelessWidget {
                         padding: EdgeInsets.all(15.0),
                         margin: EdgeInsets.all(15.0),
                         constraints: BoxConstraints(
-                            maxWidth: 200
+                            maxWidth: 250
                         ),
                         child: Column(
                           children: [
@@ -122,6 +125,7 @@ class COV extends StatelessWidget {
                               style: TextStyle(
                                 fontWeight: FontWeight.bold,
                                 fontStyle: FontStyle.italic,
+                                fontSize: 20.0,
                                 color: Colors.white,
                               ),
                             ),
@@ -130,7 +134,8 @@ class COV extends StatelessWidget {
                                     'of saliva or discharge from the nose when an infected '
                                     'person coughs or sneezes, so it’s important that you '
                                     'also practice respiratory etiquette (for example, by '
-                                    'coughing into a flexed elbow).'
+                                    'coughing into a flexed elbow).',
+                              style: TextStyle(fontSize: 17.0),
                             ),
                           ],
                         ),
@@ -143,7 +148,7 @@ class COV extends StatelessWidget {
                         padding: EdgeInsets.all(15.0),
                         margin: EdgeInsets.all(15.0),
                         constraints: BoxConstraints(
-                            maxWidth: 200
+                            maxWidth: 250
                         ),
                         child: Column(
                           children: [
@@ -152,13 +157,15 @@ class COV extends StatelessWidget {
                               style: TextStyle(
                                 fontWeight: FontWeight.bold,
                                 fontStyle: FontStyle.italic,
+                                fontSize: 20.0,
                                 color: Colors.white,
                               ),
                             ),
                             Text(
                                 '\nThe best way to prevent and slow down transmission is be well informed about the COVID-19 '
                                     'virus, the disease it causes and how it spreads. Protect yourself and others from infection '
-                                    'by washing your hands or using an alcohol based rub frequently and not touching your face. '
+                                    'by washing your hands or using an alcohol based rub frequently and not touching your face. ',
+                              style: TextStyle(fontSize: 17.0),
                             ),
                           ],
                         ),
@@ -171,7 +178,7 @@ class COV extends StatelessWidget {
                         padding: EdgeInsets.all(15.0),
                         margin: EdgeInsets.all(15.0),
                         constraints: BoxConstraints(
-                            maxWidth: 200
+                            maxWidth: 250
                         ),
                         child: Column(
                           children: [
@@ -180,13 +187,15 @@ class COV extends StatelessWidget {
                               style: TextStyle(
                                 fontWeight: FontWeight.bold,
                                 fontStyle: FontStyle.italic,
+                                fontSize: 20.0,
                                 color: Colors.white,
                               ),
                             ),
                             Text(
                                 '\nAt this time, there are no specific vaccines or treatments for COVID-19. However, there '
                                     'are many ongoing clinical trials evaluating potential treatments. WHO will continue to '
-                                    'provide updated information as soon as clinical findings become available.'
+                                    'provide updated information as soon as clinical findings become available.',
+                              style: TextStyle(fontSize: 17.0),
                             ),
                           ],
                         ),
@@ -197,7 +206,7 @@ class COV extends StatelessWidget {
               ),
               Container(
                 decoration: BoxDecoration(
-                  borderRadius: BorderRadius.all(Radius.circular(20.0)),
+                  borderRadius: BorderRadius.all(Radius.circular(5.0)),
                   color: Colors.black,
                 ),
                 padding: EdgeInsets.all(10.0),
@@ -207,7 +216,7 @@ class COV extends StatelessWidget {
                   textAlign: TextAlign.center,
                   style: TextStyle(
                     fontFamily: 'Anton',
-                    fontSize: 20.0,
+                    fontSize: 22.0,
                     fontWeight: FontWeight.bold,
                     color: Colors.white,
                   ),
@@ -220,7 +229,7 @@ class COV extends StatelessWidget {
                     children: [
                       Container(
                         decoration: BoxDecoration(
-                          borderRadius: BorderRadius.all(Radius.circular(10.0)),
+                          borderRadius: BorderRadius.all(Radius.circular(20.0)),
                           color: Colors.red,
                         ),
                         padding: EdgeInsets.all(15.0),
@@ -236,6 +245,7 @@ class COV extends StatelessWidget {
                               style: TextStyle(
                                 fontWeight: FontWeight.bold,
                                 fontStyle: FontStyle.italic,
+                                fontSize: 20.0,
                                 color: Colors.white,
                               ),
                             ),
@@ -244,7 +254,8 @@ class COV extends StatelessWidget {
                                     'lupus erythematosus, and rheumatoid arthritis, has been under '
                                     'study as a possible treatment for COVID-19. Current data shows '
                                     'that this drug does not reduce deaths among hospitalised COVID-19 '
-                                    'patients, nor help people with moderate disease.'
+                                    'patients, nor help people with moderate disease.',
+                              style: TextStyle(fontSize: 17.0),
                             ),
                           ],
                         ),
@@ -266,6 +277,7 @@ class COV extends StatelessWidget {
                               style: TextStyle(
                                 fontWeight: FontWeight.bold,
                                 fontStyle: FontStyle.italic,
+                                fontSize: 20.0,
                                 color: Colors.white,
                               ),
                             ),
@@ -275,7 +287,8 @@ class COV extends StatelessWidget {
                                     '\n\nSweat can make the mask become wet more quickly which makes '
                                     'it difficult to breathe and promotes the growth of microorganisms. '
                                     'The important preventive measure during exercise is to maintain '
-                                    'physical distance of at least one meter from others.'
+                                    'physical distance of at least one meter from others.',
+                              style: TextStyle(fontSize: 17.0),
                             ),
                           ],
                         ),
@@ -297,6 +310,7 @@ class COV extends StatelessWidget {
                               style: TextStyle(
                                 fontWeight: FontWeight.bold,
                                 fontStyle: FontStyle.italic,
+                                fontSize: 20.0,
                                 color: Colors.white,
                               ),
                             ),
@@ -306,7 +320,8 @@ class COV extends StatelessWidget {
                                     'in homes where infants and small children crawl or play on floors, '
                                     'consider leaving your shoes at the entrance of your home. This '
                                     'will help prevent contact with dirt or any waste  that could be '
-                                    'carried on the soles of shoes.'
+                                    'carried on the soles of shoes.',
+                              style: TextStyle(fontSize: 17.0),
                             ),
                           ],
                         ),
@@ -329,6 +344,7 @@ class COV extends StatelessWidget {
                               style: TextStyle(
                                 fontWeight: FontWeight.bold,
                                 fontStyle: FontStyle.italic,
+                                fontSize: 20.0,
                                 color: Colors.white,
                               ),
                             ),
@@ -337,7 +353,8 @@ class COV extends StatelessWidget {
                                     'Coronaviridae. Antibiotics do not work against viruses.'
                                     '\n\nSome people who become ill with COVID-19 can also develop a '
                                     'bacterial infection as a complication. In this case, antibiotics '
-                                    'may be recommended by a health care provider.'
+                                    'may be recommended by a health care provider.',
+                              style: TextStyle(fontSize: 17.0),
                             ),
                           ],
                         ),
@@ -359,6 +376,7 @@ class COV extends StatelessWidget {
                               style: TextStyle(
                                 fontWeight: FontWeight.bold,
                                 fontStyle: FontStyle.italic,
+                                fontSize: 20.0,
                                 color: Colors.white,
                               ),
                             ),
@@ -368,7 +386,8 @@ class COV extends StatelessWidget {
                                     'fever and difficulty breathing seek medical care early - call '
                                     'your health facility by telephone first. If you have fever and '
                                     'live in an area with malaria or dengue seek medical care '
-                                    'immediately.'
+                                    'immediately.',
+                              style: TextStyle(fontSize: 17.0),
                             ),
                           ],
                         ),
@@ -390,11 +409,13 @@ class COV extends StatelessWidget {
                               style: TextStyle(
                                 fontWeight: FontWeight.bold,
                                 fontStyle: FontStyle.italic,
+                                fontSize: 20.0,
                                 color: Colors.white,
                               ),
                             ),
                             Text(
-                                '\nThe harmful use of alcohol increases your risk of health problems.'
+                                '\nThe harmful use of alcohol increases your risk of health problems.',
+                              style: TextStyle(fontSize: 17.0),
                             ),
                           ],
                         ),
@@ -416,6 +437,7 @@ class COV extends StatelessWidget {
                               style: TextStyle(
                                 fontWeight: FontWeight.bold,
                                 fontStyle: FontStyle.italic,
+                                fontSize: 20.0,
                                 color: Colors.white,
                               ),
                             ),
@@ -425,7 +447,8 @@ class COV extends StatelessWidget {
                                     'cannot detect people who are infected with COVID-19. There are '
                                     'many causes of fever. Call your healthcare provider if you need '
                                     'assistance or seek immediate medical care if you have fever and '
-                                    'live in an area with malaria or dengue.'
+                                    'live in an area with malaria or dengue.',
+                              style: TextStyle(fontSize: 17.0),
                             ),
                           ],
                         ),
@@ -448,6 +471,7 @@ class COV extends StatelessWidget {
                               style: TextStyle(
                                 fontWeight: FontWeight.bold,
                                 fontStyle: FontStyle.italic,
+                                fontSize: 20.0,
                                 color: Colors.white,
                               ),
                             ),
@@ -457,7 +481,8 @@ class COV extends StatelessWidget {
                                     'prevent COVID-19. The misuse of hydroxychloroquine can cause '
                                     'serious side effects and illness and even lead to death. WHO is '
                                     'coordinating efforts to develop and evaluate medicines to treat '
-                                    'COVID-19.'
+                                    'COVID-19.',
+                              style: TextStyle(fontSize: 17.0),
                             ),
                           ],
                         ),
@@ -480,6 +505,7 @@ class COV extends StatelessWidget {
                               style: TextStyle(
                                 fontWeight: FontWeight.bold,
                                 fontStyle: FontStyle.italic,
+                                fontSize: 20.0,
                                 color: Colors.white,
                               ),
                             ),
@@ -489,7 +515,8 @@ class COV extends StatelessWidget {
                                     'coronavirus is to keep at least 1 metre away from others and to '
                                     'wash your hands frequently and thoroughly. It is also beneficial '
                                     'for your general health to maintain a balanced diet, stay well '
-                                    'hydrated, exercise regularly and sleep well.'
+                                    'hydrated, exercise regularly and sleep well.',
+                              style: TextStyle(fontSize: 17.0),
                             ),
                           ],
                         ),
@@ -513,6 +540,7 @@ class COV extends StatelessWidget {
                               style: TextStyle(
                                 fontWeight: FontWeight.bold,
                                 fontStyle: FontStyle.italic,
+                                fontSize: 20.0,
                                 color: Colors.white,
                               ),
                             ),
@@ -523,7 +551,8 @@ class COV extends StatelessWidget {
                                     'skin and eyes.'
                                     '\n\nBleach and disinfectant should be used carefully to '
                                     'disinfect surfaces only. Remember to keep chlorine (bleach) '
-                                    'and other disinfectants out of reach of children.'
+                                    'and other disinfectants out of reach of children.',
+                              style: TextStyle(fontSize: 17.0),
                             ),
                           ],
                         ),
@@ -545,12 +574,14 @@ class COV extends StatelessWidget {
                               style: TextStyle(
                                 fontWeight: FontWeight.bold,
                                 fontStyle: FontStyle.italic,
+                                fontSize: 20.0,
                                 color: Colors.white,
                               ),
                             ),
                             Text(
                                 '\nViruses cannot travel on radio waves/mobile networks. COVID-19 is '
-                                    'spreading in many countries that do not have 5G mobile networks.'
+                                    'spreading in many countries that do not have 5G mobile networks.',
+                              style: TextStyle(fontSize: 17.0),
                             ),
                           ],
                         ),
@@ -573,6 +604,7 @@ class COV extends StatelessWidget {
                               style: TextStyle(
                                 fontWeight: FontWeight.bold,
                                 fontStyle: FontStyle.italic,
+                                fontSize: 20.0,
                                 color: Colors.white,
                               ),
                             ),
@@ -580,7 +612,8 @@ class COV extends StatelessWidget {
                                 '\nYou can catch COVID-19, no matter how sunny or hot the weather is. '
                                     'Countries with hot weather have reported cases of COVID-19. To '
                                     'protect yourself, make sure you clean your hands frequently and '
-                                    'thoroughly and avoid touching your eyes, mouth, and nose.'
+                                    'thoroughly and avoid touching your eyes, mouth, and nose.',
+                              style: TextStyle(fontSize: 17.0),
                             ),
                           ],
                         ),
@@ -602,6 +635,7 @@ class COV extends StatelessWidget {
                               style: TextStyle(
                                 fontWeight: FontWeight.bold,
                                 fontStyle: FontStyle.italic,
+                                fontSize: 20.0,
                                 color: Colors.white,
                               ),
                             ),
@@ -610,7 +644,8 @@ class COV extends StatelessWidget {
                                     'the new coronavirus could be transmitted by mosquitoes. The new '
                                     'coronavirus is a respiratory virus which spreads primarily through '
                                     'droplets generated when an infected person coughs or sneezes, or '
-                                    'through droplets of saliva or discharge from the nose.'
+                                    'through droplets of saliva or discharge from the nose.',
+                              style: TextStyle(fontSize: 17.0),
                             ),
                           ],
                         ),
@@ -632,6 +667,7 @@ class COV extends StatelessWidget {
                               style: TextStyle(
                                 fontWeight: FontWeight.bold,
                                 fontStyle: FontStyle.italic,
+                                fontSize: 20.0,
                                 color: Colors.white,
                               ),
                             ),
@@ -642,7 +678,8 @@ class COV extends StatelessWidget {
                                     'to be more vulnerable to becoming severely ill with the virus.'
                                     '\n\nWHO advises people of all ages to take steps to protect '
                                     'themselves from the virus, for example by following good hand '
-                                    'hygiene and good respiratory hygiene.'
+                                    'hygiene and good respiratory hygiene.',
+                              style: TextStyle(fontSize: 17.0),
                             ),
                           ],
                         ),
